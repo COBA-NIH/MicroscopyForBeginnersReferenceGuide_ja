@@ -1,0 +1,633 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="ja" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>より詳しく知るための参考資料 &#8212; Microscopy for Beginners reference guide</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'クリックして表示';</script>
+    <script>let toggleHintHide = 'クリックして非表示';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-LDZ3MLCB50"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-LDZ3MLCB50');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '03_Image_analysis/Resources';</script>
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="はじめに" href="../04_Data_presentation/Introduction.html" />
+    <link rel="prev" title="データの管理と共有" href="Data_management.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="ja"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../welcome.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Microscopy for Beginners reference guide - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Microscopy for Beginners reference guide - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../welcome.html">
+                    ようこそ
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../QuantitativeBioimaging.html">Quantitative Bioimaging</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Sample Preparation</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Introduction.html">はじめに</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Experimental_design.html">実験デザイン</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Considerations.html">サンプルの種類の検討</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Reproducibility.html">再現性</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Resources.html">より詳しく知るための参考資料</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Sample Acquisition</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../02_Sample_acquisition/Introduction.html">はじめに</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_Sample_acquisition/Picking.html">適切な顕微鏡の選び方</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_Sample_acquisition/Practical_considerations.html">実践で気をつけること</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_Sample_acquisition/Resources.html">より詳しく知るための参考資料</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Image Analysis and Data Handling</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">はじめに</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Common_types_of_analysis.html">一般的な画像解析</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Shape.html">サイズと形状の測定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Intensity.html">強度の計測</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Colocalization.html">共局在</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Tracking.html">オブジェクトトラッキング</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Classification.html">分類</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Software.html">オープンソースのソフトウェア</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="GeneralUseSoftware.html">汎用ソフトウェア</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SpecificUseSoftware.html">特定の用途に使うソフトウェア</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Data_management.html">データの管理と共有</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">より詳しく知るための参考資料</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Data Interpretation</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04_Data_presentation/Introduction.html">はじめに</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_Data_presentation/Presentation_images.html">顕微鏡画像の提示</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_Data_presentation/Statistics.html">統計</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_Data_presentation/Resources.html">より詳しく知るための参考資料</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Additional Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../community_resources.html">コミュニティのリソース</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors.html">このガイドへの貢献</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary.html">用語集</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bibliography.html">Bibliography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">索引</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/broadinstitute/MicroscopyForBeginnersReferenceGuide" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="ソースリポジトリ"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/broadinstitute/MicroscopyForBeginnersReferenceGuide/edit/main/03_Image_analysis/Resources.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/broadinstitute/MicroscopyForBeginnersReferenceGuide/issues/new?title=Issue%20on%20page%20%2F03_Image_analysis/Resources.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="問題を報告"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="このページをダウンロード">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/03_Image_analysis/Resources.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="ソースファイルをダウンロード"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="PDFに印刷"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="全画面モード"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="検索" aria-label="検索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>より詳しく知るための参考資料</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="resources-for-learning-more">
+<h1>より詳しく知るための参考資料<a class="headerlink" href="#resources-for-learning-more" title="Permalink to this heading">#</a></h1>
+<table class="table" id="image-analysis-resource-table">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>リソース名</strong></p></th>
+<th class="head"><p><strong>リンク</strong></p></th>
+<th class="head"><p><strong>概要</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>🌐 <a class="reference external" href="http://Image.sc">Image.sc</a> <span id="id1"><sup><a class="reference internal" href="../bibliography.html#id50" title="Curtis T Rueden, Jeanelle Ackerman, Ellen T Arena, Jan Eglinger, Beth A Cimini, Allen Goodman, Anne E Carpenter, and Kevin W Eliceiri. Scientific community image forum: a discussion forum for scientific image software. PLoS Biol., 17(6):e3000340, June 2019.">42</a></sup></span></p></td>
+<td><p><a class="reference external" href="https://forum.image.sc/">link</a></p></td>
+<td><p>バイオイメージング解析ソフトウェアに関するフォーラム</p></td>
+</tr>
+<tr class="row-odd"><td><p>🌐 GloBIAS Bioimage Analyst Database</p></td>
+<td><p><a class="reference external" href="https://www.globias.org/resources/bioimage-analyst-db">link</a></p></td>
+<td><p>近くのバイオイメージング解析の専門家を検索できます</p></td>
+</tr>
+<tr class="row-even"><td><p>🌐 Peter Bankhead’s Intro to Bioimage Analysis</p></td>
+<td><p><a class="reference external" href="https://bioimagebook.github.io/">link</a></p></td>
+<td><p>バイオイメージング解析を全くしたことのない初学者に向けたガイドであり、理解を確認するための設問と解答、Python や ImageJ を用いた演習、さらに学習内容を確認するための動画もあります。</p></td>
+</tr>
+<tr class="row-odd"><td><p>📖 Bioimage Data Analysis <span id="id2"><sup><a class="reference internal" href="../bibliography.html#id90" title="Kota Miura, editor. Bioimage Data Analysis. Wiley-VCH, 2016.">43</a></sup></span></p></td>
+<td><p><a class="reference external" href="https://analyticalscience.wiley.com/do/10.1002/was.00050003/full/bioimagedataanalysis.pdf">link</a></p></td>
+<td><p>三浦耕太先生 編の無料でオンライン公開されているテキスト。バイオイメージング解析の専門家がさまざまなトピックを紹介</p></td>
+</tr>
+<tr class="row-even"><td><p>📄 Reproducible image handling and analysis <span id="id3"><sup><a class="reference internal" href="../bibliography.html#id46" title="Kota Miura and Simon F Nørrelykke. Reproducible image handling and analysis. EMBO J., 40(3):e105889, February 2021.">44</a></sup></span></p></td>
+<td><p><a class="reference external" href="https://www.embopress.org/doi/full/10.15252/embj.2020105889">link</a></p></td>
+<td><p>主要な画像処理上の落とし穴と、それらを回避して再現性のある解析ワークフローを構築する方法をレビューした論文</p></td>
+</tr>
+<tr class="row-odd"><td><p>📄 Made to measure: an introduction to quantification in microscopy data</p></td>
+<td><p><a class="reference external" href="https://arxiv.org/abs/2302.01657#">link</a> <span id="id4"><sup><a class="reference internal" href="../bibliography.html#id6" title="Siân Culley, Alicia Cuber Caballero, Jemima J Burden, and Virginie Uhlmann. Made to measure: an introduction to quantification in microscopy data. arxiv, February 2023. arXiv:2302.01657.">45</a></sup></span></p></td>
+<td><p>顕微鏡データで行われるいくつかの一般的な測定のカテゴリと、それらの結果に影響を与えうる技術的要因について解説した論文</p></td>
+</tr>
+<tr class="row-even"><td><p>🌐 Metrics Reloaded <span id="id5"><sup><a class="reference internal" href="../bibliography.html#id117" title="Lena Maier-Hein, Annika Reinke, Patrick Godau, Minu D Tizabi, Florian Buettner, Evangelia Christodoulou, Ben Glocker, Fabian Isensee, Jens Kleesiek, Michal Kozubek, Mauricio Reyes, Michael A Riegler, Manuel Wiesenfarth, A Emre Kavur, Carole H Sudre, Michael Baumgartner, Matthias Eisenmann, Doreen Heckmann-Nötzel, Tim Rädsch, Laura Acion, Michela Antonelli, Tal Arbel, Spyridon Bakas, Arriel Benis, Matthew B Blaschko, M Jorge Cardoso, Veronika Cheplygina, Beth A Cimini, Gary S Collins, Keyvan Farahani, Luciana Ferrer, Adrian Galdran, Bram van Ginneken, Robert Haase, Daniel A Hashimoto, Michael M Hoffman, Merel Huisman, Pierre Jannin, Charles E Kahn, Dagmar Kainmueller, Bernhard Kainz, Alexandros Karargyris, Alan Karthikesalingam, Florian Kofler, Annette Kopp-Schneider, Anna Kreshuk, Tahsin Kurc, Bennett A Landman, Geert Litjens, Amin Madani, Klaus Maier-Hein, Anne L Martel, Peter Mattson, Erik Meijering, Bjoern Menze, Karel G M Moons, Henning Müller, Brennan Nichyporuk, Felix Nickel, Jens Petersen, Nasir Rajpoot, Nicola Rieke, Julio Saez-Rodriguez, Clara I Sánchez, Shravya Shetty, Maarten van Smeden, Ronald M Summers, Abdel A Taha, Aleksei Tiulpin, Sotirios A Tsaftaris, Ben Van Calster, Gaël Varoquaux, and Paul F Jäger. Metrics reloaded: recommendations for image analysis validation. Nat. Methods, 21(2):195–212, February 2024.">46</a>,<a class="reference internal" href="../bibliography.html#id116" title="Annika Reinke, Minu D Tizabi, Michael Baumgartner, Matthias Eisenmann, Doreen Heckmann-Nötzel, A Emre Kavur, Tim Rädsch, Carole H Sudre, Laura Acion, Michela Antonelli, Tal Arbel, Spyridon Bakas, Arriel Benis, Florian Buettner, M Jorge Cardoso, Veronika Cheplygina, Jianxu Chen, Evangelia Christodoulou, Beth A Cimini, Keyvan Farahani, Luciana Ferrer, Adrian Galdran, Bram van Ginneken, Ben Glocker, Patrick Godau, Daniel A Hashimoto, Michael M Hoffman, Merel Huisman, Fabian Isensee, Pierre Jannin, Charles E Kahn, Dagmar Kainmueller, Bernhard Kainz, Alexandros Karargyris, Jens Kleesiek, Florian Kofler, Thijs Kooi, Annette Kopp-Schneider, Michal Kozubek, Anna Kreshuk, Tahsin Kurc, Bennett A Landman, Geert Litjens, Amin Madani, Klaus Maier-Hein, Anne L Martel, Erik Meijering, Bjoern Menze, Karel G M Moons, Henning Müller, Brennan Nichyporuk, Felix Nickel, Jens Petersen, Susanne M Rafelski, Nasir Rajpoot, Mauricio Reyes, Michael A Riegler, Nicola Rieke, Julio Saez-Rodriguez, Clara I Sánchez, Shravya Shetty, Ronald M Summers, Abdel A Taha, Aleksei Tiulpin, Sotirios A Tsaftaris, Ben Van Calster, Gaël Varoquaux, Ziv R Yaniv, Paul F Jäger, and Lena Maier-Hein. Understanding metric-related pitfalls in image analysis validation. Nat. Methods, 21(2):182–194, February 2024.">47</a>,<a class="reference internal" href="../bibliography.html#id118" title="Annika Reinke, Minu D. Tizabi, Carole H. Sudre, Matthias Eisenmann, Tim Rädsch, Michael Baumgartner, Laura Acion, Michela Antonelli, Tal Arbel, Spyridon Bakas, Peter Bankhead, Arriel Benis, Matthew Blaschko, Florian Buettner, M. Jorge Cardoso, Jianxu Chen, Veronika Cheplygina, Evangelia Christodoulou, Beth Cimini, Gary S. Collins, Sandy Engelhardt, Keyvan Farahani, Luciana Ferrer, Adrian Galdran, Bram van Ginneken, Ben Glocker, Patrick Godau, Robert Haase, Fred Hamprecht, Daniel A. Hashimoto, Doreen Heckmann-Nötzel, Peter Hirsch, Michael M. Hoffman, Merel Huisman, Fabian Isensee, Pierre Jannin, Charles E. Kahn, Dagmar Kainmueller, Bernhard Kainz, Alexandros Karargyris, Alan Karthikesalingam, A. Emre Kavur, Hannes Kenngott, Jens Kleesiek, Andreas Kleppe, Sven Kohler, Florian Kofler, Annette Kopp-Schneider, Thijs Kooi, Michal Kozubek, Anna Kreshuk, Tahsin Kurc, Bennett A. Landman, Geert Litjens, Amin Madani, Klaus Maier-Hein, Anne L. Martel, Peter Mattson, Erik Meijering, Bjoern Menze, David Moher, Karel G. M. Moons, Henning Müller, Brennan Nichyporuk, Felix Nickel, M. Alican Noyan, Jens Petersen, Gorkem Polat, Susanne M. Rafelski, Nasir Rajpoot, Mauricio Reyes, Nicola Rieke, Michael Riegler, Hassan Rivaz, Julio Saez-Rodriguez, Clara I. Sánchez, Julien Schroeter, Anindo Saha, M. Alper Selver, Lalith Sharan, Shravya Shetty, Maarten van Smeden, Bram Stieltjes, Ronald M. Summers, Abdel A. Taha, Aleksei Tiulpin, Sotirios A. Tsaftaris, Ben Van Calster, Gaël Varoquaux, Manuel Wiesenfarth, Ziv R. Yaniv, Paul Jäger, and Lena Maier-Hein. Common limitations of image processing metrics: a picture story. 2023. arXiv:2104.05642.">48</a></sup></span></p></td>
+<td><p><a class="reference external" href="https://metrics-reloaded.dkfz.de/">link</a></p></td>
+<td><p>科学的な問いに対して適切な指標を選択するためのインタラクティブなガイド</p></td>
+</tr>
+<tr class="row-odd"><td><p>📄 A Hitchhiker's guide through the bio-image analysis software universe <span id="id6"><sup><a class="reference internal" href="../bibliography.html#id71" title="Robert Haase, Elnaz Fazeli, David Legland, Michael Doube, Siân Culley, Ilya Belevich, Eija Jokitalo, Martin Schorb, Anna Klemm, and Christian Tischer. A hitchhiker's guide through the bio-image analysis software universe. FEBS Lett., 596(19):2472–2485, October 2022.">3</a></sup></span></p></td>
+<td><p><a class="reference external" href="https://febs.onlinelibrary.wiley.com/doi/full/10.1002/1873-3468.14451">link</a></p></td>
+<td><p>画像解析ソフトウェアやパッケージについての解説と用語集を提供する論文</p></td>
+</tr>
+<tr class="row-even"><td><p>🌐 BioImage Informatics Index</p></td>
+<td><p><a class="reference external" href="https://biii.eu/">link</a></p></td>
+<td><p>問題、手法、または使用したいソフトウェアに基づいて、バイオイメージ解析ツールやワークフローを検索できるリポジトリ・プラットフォーム。</p></td>
+</tr>
+<tr class="row-odd"><td><p>🎥 iBiology Bioimage Analysis video series</p></td>
+<td><p><a class="reference external" href="https://youtu.be/1xo4vi6Ub4I">link</a></p></td>
+<td><p>バイオイメージ解析を紹介するビデオシリーズ。<span class="xref std std-term">画像処理</span>、<span class="xref std std-term">セグメンテーション</span>、トラッキング、測定の実施と解釈の概要、ヒントと注意点など。</p></td>
+</tr>
+<tr class="row-even"><td><p>🌐 Bioimage ANalysis Desktop (BAND)</p></td>
+<td><p><a class="reference external" href="https://band.embl.de">link</a></p></td>
+<td><p>バイオイメージング解析ソフトウェアにブラウザからアクセスできる仮想デスクトップ</p></td>
+</tr>
+<tr class="row-odd"><td><p>🌐 Galaxy Imaging Node</p></td>
+<td><p><a class="reference external" href="https://imaging.usegalaxy.eu/">link</a></p></td>
+<td><p>多数のオープンソース画像解析ツールとワークフローがあらかじめ搭載されたGalaxyノード。容易に再現性のあるFAIRワークフローの作成と共有ができる。</p></td>
+</tr>
+<tr class="row-even"><td><p>🌐 Image Analysis Training Resources</p></td>
+<td><p><a class="reference external" href="https://neubias.github.io/training-resources/index.html">link</a></p></td>
+<td><p>NEUBIASが収集した、画像解析のトレーニングリソース。米国教育ワークショップのカーペントリーズのスタイルを参考にしている。</p></td>
+</tr>
+<tr class="row-odd"><td><p>🌐 Bioimage Analysis AwesomeList</p></td>
+<td><p><a class="reference external" href="https://github.com/hallvaaw/awesome-biological-image-analysis">link</a></p></td>
+<td><p>バイオイメージ解析に関連するリソースの <a class="reference external" href="https://github.com/sindresorhus/awesome">まとめ</a></p></td>
+</tr>
+<tr class="row-even"><td><p>🌐 Bioimage Analysis Notebooks</p></td>
+<td><p><a class="reference external" href="https://haesleinhuepf.github.io/BioImageAnalysisNotebooks/">link</a></p></td>
+<td><p>バイオイメージング解析、GPU高速化画像処理、バイオイメージングデータサイエンスなどのためのPython Jupyter Notebook集。</p></td>
+</tr>
+<tr class="row-odd"><td><p>📄 Believing is seeing - the deceptive influence of bias in quantitative microscopy<span id="id7"><sup><a class="reference internal" href="../bibliography.html#id108" title="Rachel M Lee, Leanna R Eisenman, Satya Khuon, Jesse S Aaron, and Teng-Leong Chew. Believing is seeing - the deceptive influence of bias in quantitative microscopy. J. Cell Sci., January 2024.">18</a></sup></span></p></td>
+<td><p><a class="reference external" href="https://doi.org/10.1242/jcs.261567">link</a></p></td>
+<td><p>顕微鏡結果にバイアスを生じさせる技術的・心理的要因を論じたレビュー</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./03_Image_analysis"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Data_management.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">前へ</p>
+        <p class="prev-next-title">データの管理と共有</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../04_Data_presentation/Introduction.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">次へ</p>
+        <p class="prev-next-title">はじめに</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <p>
+<a href="https://www.bioimagingguide.org">English</a> <a href="https://cs.bioimagingguide.org">česky</a> <a href="https://pt.bioimagingguide.org">português</a> <a href="https://es.bioimagingguide.org">español</a>
+</p>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

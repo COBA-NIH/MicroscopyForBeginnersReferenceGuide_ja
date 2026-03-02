@@ -1,0 +1,648 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="ja" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>サンプルの種類の検討 &#8212; Microscopy for Beginners reference guide</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'クリックして表示';</script>
+    <script>let toggleHintHide = 'クリックして非表示';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-LDZ3MLCB50"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-LDZ3MLCB50');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '01_Sample_preparation/Considerations';</script>
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="再現性" href="Reproducibility.html" />
+    <link rel="prev" title="実験デザイン" href="Experimental_design.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="ja"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../welcome.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Microscopy for Beginners reference guide - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Microscopy for Beginners reference guide - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../welcome.html">
+                    ようこそ
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../QuantitativeBioimaging.html">Quantitative Bioimaging</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Sample Preparation</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">はじめに</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Experimental_design.html">実験デザイン</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">サンプルの種類の検討</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Reproducibility.html">再現性</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Resources.html">より詳しく知るための参考資料</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Sample Acquisition</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../02_Sample_acquisition/Introduction.html">はじめに</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_Sample_acquisition/Picking.html">適切な顕微鏡の選び方</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_Sample_acquisition/Practical_considerations.html">実践で気をつけること</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_Sample_acquisition/Resources.html">より詳しく知るための参考資料</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Image Analysis and Data Handling</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../03_Image_analysis/Introduction.html">はじめに</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../03_Image_analysis/Common_types_of_analysis.html">一般的な画像解析</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../03_Image_analysis/Shape.html">サイズと形状の測定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_Image_analysis/Intensity.html">強度の計測</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_Image_analysis/Colocalization.html">共局在</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_Image_analysis/Tracking.html">オブジェクトトラッキング</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_Image_analysis/Classification.html">分類</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../03_Image_analysis/Software.html">オープンソースのソフトウェア</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../03_Image_analysis/GeneralUseSoftware.html">汎用ソフトウェア</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_Image_analysis/SpecificUseSoftware.html">特定の用途に使うソフトウェア</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../03_Image_analysis/Data_management.html">データの管理と共有</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03_Image_analysis/Resources.html">より詳しく知るための参考資料</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Data Interpretation</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04_Data_presentation/Introduction.html">はじめに</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_Data_presentation/Presentation_images.html">顕微鏡画像の提示</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_Data_presentation/Statistics.html">統計</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_Data_presentation/Resources.html">より詳しく知るための参考資料</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Additional Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../community_resources.html">コミュニティのリソース</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors.html">このガイドへの貢献</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary.html">用語集</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bibliography.html">Bibliography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">索引</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/broadinstitute/MicroscopyForBeginnersReferenceGuide" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="ソースリポジトリ"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/broadinstitute/MicroscopyForBeginnersReferenceGuide/edit/main/01_Sample_preparation/Considerations.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/broadinstitute/MicroscopyForBeginnersReferenceGuide/issues/new?title=Issue%20on%20page%20%2F01_Sample_preparation/Considerations.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="問題を報告"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="このページをダウンロード">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/01_Sample_preparation/Considerations.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="ソースファイルをダウンロード"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="PDFに印刷"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="全画面モード"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="検索" aria-label="検索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>サンプルの種類の検討</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="considerations-for-different-sample-types">
+<h1>サンプルの種類の検討<a class="headerlink" href="#considerations-for-different-sample-types" title="Permalink to this heading">#</a></h1>
+<p id="content-sample-types">撮影する試料の種類には多くの選択肢があり、サンプル調製の技術や画像化モダリティの進歩により、さらに多様で複雑な生物学的試料のイメージングが可能になってきています。実験計画の他の多くの側面と同様、試料の種類の選択にはトレードオフがあります。簡便な調製とイメージングが可能な試料は、培養細胞の単層膜のように、小さく、薄く、比較的透明である傾向があります。このような試料はハイスループットでイメージングが可能であるという明らかな利点がありますが、すべての生物学的な疑問に適しているわけではありません。特に、異なる細胞種間の相互作用に関わる疑問をテーマにする場合は、オルガノイドのような厚みのある標本や、全組織や切片化された組織が必要になることがあります。どのような生物学的文脈が自分の疑問に適切で、最終的にどのような測定ができるようにしたいかを慎重に検討する必要があります。以下に一般的なサンプルの種類をまとめます。</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+🤔 選択肢<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">ここでは試料のタイプについて、いくつかの主要なカテゴリーを紹介します。これらのカテゴリーの間には、厳密な境界があるわけではありません（例えば、細胞もオルガノイドも3D培養が可能であり、ライブイメージングも固定<a class="reference internal" href="../Glossary.html#term-Fixation"><span class="xref std std-term">fixation</span></a>後の撮影も可能です）。以下では、一般的な利点と欠点をまとめます。</p>
+<p class="sd-card-text"><strong>培養細胞</strong></p>
+<p class="sd-card-text">多くの異なる種類の細胞を培養、つまりシャーレの中で増殖させることができます。細胞は、1種類の細胞のみの単一培養 monoculture として、または複数の細胞種を含む共培養 co-culture として増殖させることができます。</p>
+<p class="sd-card-text"><em>利点</em></p>
+<ul class="simple">
+<li><p class="sd-card-text">培養細胞は比較的簡単に撮影でき、多くのテーマでは、共焦点法や超解像法よりも迅速で利用しやすい広視野顕微鏡で撮影可能です（<a class="reference internal" href="../02_Sample_acquisition/Picking.html#content-microscope-selection"><span class="std std-ref">Acquisition</span></a>を参照）。さらに、ロボティクスと統合されたハイスループット顕微鏡を使えば、培養細胞を用いた実験やイメージングの自動化が可能です。</p></li>
+<li><p class="sd-card-text">細胞はオルガノイドや生体全体のようなより複雑な標本と比べて、凍結・解凍・培養をより迅速に行うことができ、実験にかかる期間を短縮できます。</p></li>
+</ul>
+<p class="sd-card-text"><em>欠点</em></p>
+<ul class="simple">
+<li><p class="sd-card-text">顕微鏡のほとんどの用途では、特定の厚みと公差を持つカバーガラスを通して撮像することを必要とします。しかし、多くの種類の細胞はガラス上では生存できないか、増殖できないため、サンプルの健全性を確保するために、追加のコーティングやカバーガラスの操作が必要となります。代替手段として、ガラスに似た性質を持つ独自のポリマー（光学ポリマー）を使用したイメージング用チャンバー（マルチウェルプレート、35mmディッシュ...）を製造している企業もあり、高解像度イメージングが可能です。撮像時に使用する浸液がこれらのポリマーの完全性に影響を与えるかどうかを理解することが不可欠です。これは、一部のイマージョンメディアに含まれる溶媒がポリマー層にひびを入れたり溶解させたりする可能性があるためです。</p></li>
+</ul>
+<p class="sd-card-text"><strong>オルガノイド</strong></p>
+<p class="sd-card-text">オルガノイドとは、3次元的に細胞を培養し、臓器の構造や機能を模倣したものです。オルガノイドは通常、幹細胞から培養され、自己組織化し、異なる細胞型に分化するなど、より複雑な構造を持つようになります。オルガノイドは、発生、疾患のモデル化、組織や臓器の再生の理解に適しています。</p>
+<p class="sd-card-text"><em>利点</em></p>
+<ul class="simple">
+<li><p class="sd-card-text">オルガノイドは複数の種類の細胞を含み、生体内の臓器で見られる構造や細胞の関係をある程度反映しているため、疾患や細胞間相互作用に関するより複雑な問題に適しています。また、多くの発生過程のように、平坦な細胞層ではうまく再現できない、本質的に3次元的なプロセスや構造のモデル化にも利用できます。</p></li>
+<li><p class="sd-card-text">オルガノイドは、ヒトや動物のサンプルから採取した人工多能性幹細胞（iPS細胞）から作ることができるため、あるドナーに特異的な疾患プロセスをモデル化できます。</p></li>
+</ul>
+<p class="sd-card-text"><em>欠点</em></p>
+<ul class="simple">
+<li><p class="sd-card-text">オルガノイドの成長にはより複雑なリソースとプロトコルが必要となり、ガラスやプラスチック上で培養細胞を成長させるだけの場合よりも時間がかかることがあります。</p></li>
+<li><p class="sd-card-text">オルガノイドは3次元構造であるため、広視野イメージングができないことが多く、スピニングディスク顕微鏡やポイントスキャン共焦点顕微鏡が必要になることがあります。</p></li>
+</ul>
+<p class="sd-card-text"><strong>組織</strong></p>
+<p class="sd-card-text">組織とは、細胞が協調して特定の機能を果たすことで形成される構造です。組織は、動物や植物の一部を取り出し、培養皿の中で生存・増殖させて培養することができます。また、植物や動物から組織を採取し、さまざまな分子の存在を調べるために染色することもあります。組織は通常、薄く切り分けて用いられます(<span class="xref std std-term">組織切片作製</span>)。さらに、固定標本、未固定の新鮮標本、凍結標本として扱われるほか、<span class="xref std std-term">生体外イメージング</span>のように生きた状態で観察されることもあります。</p>
+<p class="sd-card-text"><em>利点</em></p>
+<ul class="simple">
+<li><p class="sd-card-text">組織では細胞間の相互作用がより完全な状態にあり、これは一般に細胞培養よりも生体内で起こっていることをよりよく表します。</p></li>
+<li><p class="sd-card-text">ヒト組織のレポジトリにより、生物医学研究が特定の疾患を持つ患者の多様なサンプルを扱うことが可能になります。</p></li>
+</ul>
+<p class="sd-card-text"><em>欠点</em></p>
+<ul class="simple">
+<li><p class="sd-card-text">初代細胞および組織は、不死化細胞株よりも環境に敏感な傾向があり、増殖がより困難になる可能性があり、細胞の種類に応じて特殊なプロトコルが必要になる場合があります。</p></li>
+<li><p class="sd-card-text">動物や植物全体から採取した組織は、採取前にその標本が発達し成長する時間が必要です。</p></li>
+</ul>
+<p class="sd-card-text"><strong>生物全体／胚</strong></p>
+<p class="sd-card-text">一部の生物は全体が薄く透明で、そのまま撮像可能です。あるいはゼブラフィッシュのように、胚の段階がほぼ透明な動物もいます。さらに、<span class="xref std std-term">生体内イメージング</span> は、臓器を摘出したりサンプルを固定したりせずに、生きた動物の内部の細胞構造や生物学的プロセスをリアルタイムで撮像することです。一般に、多光子顕微鏡などの光の透過性が向上した特殊な機器や手法が必要であり、多くの場合は光学窓を通して特定の臓器にアクセスする機能に制限があります。</p>
+<p class="sd-card-text"><em>利点</em></p>
+<ul class="simple">
+<li><p class="sd-card-text">生物全体または胚の撮影は、特定のプロセスまたは構造を研究する際に、最も完全に生物学的コンテキストが得られる方法です。</p></li>
+</ul>
+<p class="sd-card-text"><em>欠点</em></p>
+<ul class="simple">
+<li><p class="sd-card-text">より厚い標本をイメージングする場合は、サンプルの <span class="xref std std-term">屈折率</span> をイメージング媒体の屈折率と一致させ、光の吸収と散乱を減らすために、サンプルの処理 (<span class="xref std std-term">組織透明化</span>) が必要になる場合があります。</p></li>
+<li><p class="sd-card-text">生体内イメージングには多くの場合、特定の外科手術の技術が必要であり、生命倫理委員会によって監督され、IACUC やその他の機関の委員会による承認が必要です。</p></li>
+</ul>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span style="color: red">⚠️</span> 問題が生じやすいポイント<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text"><strong>褪色と光毒性</strong> - 褪色は、励起状態の蛍光体が不可逆的に破壊されることです。いったん破壊された蛍光色素はそれ以上光を発することができなくなるため、時間の経過とともに蛍光シグナルが弱まり、S/N比や強度測定に影響を及ぼします。撮影中の褪色を最小限に抑えるために、培地に添加できるさまざまな抑制試薬があります。これらの試薬は蛍光色素の褪色を抑える効果がそれぞれ異なるため、使用する蛍光色素に適しているかどうかを製造元に確認することが重要です。例えば、グルコースオキシダーゼやピラノース2-オキシダーゼなどの<span class="xref std std-term">脱酸素剤</span> をイメージング用培地に添加すると、褪色を大幅に低減できる場合があります。 ただし、脱酸素剤を使うと、ライブセルイメージングに影響を与える可能性がある点に注意が必要です。これらの試薬は試料中のATP濃度や酸素レベルに影響を及ぼし、細胞の生存性や生物学的機能を損なう可能性があります。</p></li>
+<li><p class="sd-card-text"><strong>細胞が死んでいる場合</strong> -蛍光励起光は、DNA損傷や細胞内成分の酸化を引き起こすことがあります（光毒性）。さらに、蛍光色素の褪色は活性酸素種（ROS）を生成し、光毒性を一層強める可能性があります。撮影中に生じる活性酸素種を減らすためには、抗酸化物質を添加したり、特定の分子（リボフラビンなど）をイメージング用培地から除去したりする方法があります。これにより、試料の生存性を改善できる場合があります。<span id="id1"><sup><a class="reference internal" href="../bibliography.html#id103" title="John H. Stockley, Kimberley Evans, Moritz Matthey, Katrin Volbracht, Sylvia Agathou, Jana Mukanowa, Juan Burrone, and Ragnhildur T. Káradóttir. Surpassing light-induced cell damage in vitro with novel cell culture media. Scientific Reports, 7(1):849, Apr 2017. URL: https://doi.org/10.1038/s41598-017-00829-x, doi:10.1038/s41598-017-00829-x.">6</a></sup></span></p></li>
+<li><p class="sd-card-text"><strong>固定した細胞が予想どおりに見えない場合</strong> - 固定処理は、さまざまなタンパク質の局在や蛍光シグナルに影響を与えることがあります。可能であれば、関心のあるタンパク質や分子の分布を、固定ありの場合と固定なしの場合で比較するようにしてください。また、使用している固定法が試料に適しているかどうかを検討し、必要に応じて別の<span class="xref std std-term">固定</span>法を選択することも重要です。</p></li>
+</ul>
+<ul class="simple" id="content-sample-opacity">
+<li><p class="sd-card-text"><strong>試料が不透明すぎる場合</strong> - 厚い組織切片、色素を多く含む細胞、あるいは個体全体のような厚みのある試料は、撮像が難しいことがあります。これは、組織内部における <span class="xref std std-term">屈折率</span>の不均一性によって光の吸収や散乱が生じ、光が十分に透過しないためです。組織の観察を容易にするために、厚い組織をさまざまな厚さに切り分ける方法が一般的に用いられます。この操作を組織切片作製といいます。多くの場合、試料は固定後にパラフィン包埋するか、凍結包埋してから、クリオスタット、ミクロトーム、ビブラトームなどの装置で薄切し、切片をチューブやスライドガラス上に回収します。しかし、臓器のような複雑な生体構造では、多くの構成要素が二次元的な切片内に収まりきらないため、この方法では細胞成分同士の空間的な関係を十分に理解できない場合があります。そこで用いられるのが組織透明化です。これは、試料全体の<span class="xref std std-term">屈折率</span>を均一化することで組織内の不均一性を減らし、光が透過しやすくする手法です。これにより、試料を物理的に切片化することなく、共焦点顕微鏡などの従来の顕微鏡技術を用いて、臓器や組織全体を高解像度で三次元的に観察できます。</p></li>
+</ul>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+📚🤷‍♀️ さらに詳しく知るために<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">📄 <a class="reference external" href="https://www.nature.com/articles/s43586-022-00174-y#:~:text=An%20organoid%20is%20a%20self,%2C9%2C10%2C11'">Organoids Primer</a> <span id="id2"><sup><a class="reference internal" href="../bibliography.html#id80" title="Zixuan Zhao, Xinyi Chen, Anna M Dowbaj, Aleksandra Sljukic, Kaitlin Bratlie, Luda Lin, Eliza Li Shan Fong, Gowri Manohari Balachander, Zhaowei Chen, Alice Soragni, Meritxell Huch, Yi Arial Zeng, Qun Wang, and Hanry Yu. Organoids. Nature Reviews Methods Primers, 2(1):1–21, December 2022.">7</a></sup></span></p></li>
+<li><p class="sd-card-text">📄 <a class="reference external" href="https://doi.org/10.1038/s41596-020-0313-9">Tutorial: guidance for quantitative confocal microscopy</a> <span id="id3"><sup><a class="reference internal" href="../bibliography.html#id81" title="James Jonkman, Claire M Brown, Graham D Wright, Kurt I Anderson, and Alison J North. Tutorial: guidance for quantitative confocal microscopy. Nat. Protoc., 15(5):1585–1611, May 2020.">5</a></sup></span></p></li>
+<li><p class="sd-card-text">📄 <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/33154172/">Hypothesis-driven quantitative fluorescence microscopy - the importance of reverse-thinking in experimental design</a> <span id="id4"><sup><a class="reference internal" href="../bibliography.html#id82" title="Eric C Wait, Michael A Reiche, and Teng-Leong Chew. Hypothesis-driven quantitative fluorescence microscopy - the importance of reverse-thinking in experimental design. J. Cell Sci., November 2020.">8</a></sup></span></p></li>
+</ul>
+</div>
+</details><!-- 
+Commented out text not shown on the page
+Images of the specimen types would be cool!
+
+ --></section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./01_Sample_preparation"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Experimental_design.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">前へ</p>
+        <p class="prev-next-title">実験デザイン</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Reproducibility.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">次へ</p>
+        <p class="prev-next-title">再現性</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <p>
+<a href="https://www.bioimagingguide.org">English</a> <a href="https://cs.bioimagingguide.org">česky</a> <a href="https://pt.bioimagingguide.org">português</a> <a href="https://es.bioimagingguide.org">español</a>
+</p>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,792 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="ja" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>汎用ソフトウェア &#8212; Microscopy for Beginners reference guide</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'クリックして表示';</script>
+    <script>let toggleHintHide = 'クリックして非表示';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-LDZ3MLCB50"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-LDZ3MLCB50');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '03_Image_analysis/GeneralUseSoftware';</script>
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="特定の用途に使うソフトウェア" href="SpecificUseSoftware.html" />
+    <link rel="prev" title="オープンソースのソフトウェア" href="Software.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="ja"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../welcome.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Microscopy for Beginners reference guide - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Microscopy for Beginners reference guide - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../welcome.html">
+                    ようこそ
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../QuantitativeBioimaging.html">Quantitative Bioimaging</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Sample Preparation</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Introduction.html">はじめに</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Experimental_design.html">実験デザイン</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Considerations.html">サンプルの種類の検討</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Reproducibility.html">再現性</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Resources.html">より詳しく知るための参考資料</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Sample Acquisition</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../02_Sample_acquisition/Introduction.html">はじめに</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_Sample_acquisition/Picking.html">適切な顕微鏡の選び方</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_Sample_acquisition/Practical_considerations.html">実践で気をつけること</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_Sample_acquisition/Resources.html">より詳しく知るための参考資料</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Image Analysis and Data Handling</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">はじめに</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Common_types_of_analysis.html">一般的な画像解析</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Shape.html">サイズと形状の測定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Intensity.html">強度の計測</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Colocalization.html">共局在</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Tracking.html">オブジェクトトラッキング</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Classification.html">分類</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="Software.html">オープンソースのソフトウェア</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">汎用ソフトウェア</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SpecificUseSoftware.html">特定の用途に使うソフトウェア</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Data_management.html">データの管理と共有</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Resources.html">より詳しく知るための参考資料</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Data Interpretation</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04_Data_presentation/Introduction.html">はじめに</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_Data_presentation/Presentation_images.html">顕微鏡画像の提示</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_Data_presentation/Statistics.html">統計</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_Data_presentation/Resources.html">より詳しく知るための参考資料</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Additional Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../community_resources.html">コミュニティのリソース</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributors.html">このガイドへの貢献</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary.html">用語集</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bibliography.html">Bibliography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">索引</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/broadinstitute/MicroscopyForBeginnersReferenceGuide" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="ソースリポジトリ"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/broadinstitute/MicroscopyForBeginnersReferenceGuide/edit/main/03_Image_analysis/GeneralUseSoftware.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/broadinstitute/MicroscopyForBeginnersReferenceGuide/issues/new?title=Issue%20on%20page%20%2F03_Image_analysis/GeneralUseSoftware.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="問題を報告"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="このページをダウンロード">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/03_Image_analysis/GeneralUseSoftware.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="ソースファイルをダウンロード"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="PDFに印刷"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="全画面モード"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="検索" aria-label="検索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>汎用ソフトウェア</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> 目次 </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img-src-https-imagej-net-media-icons-imagej2-png-alt-logo-width-30px-imagej"><img alt="logo" src="https://imagej.net/media/icons/imagej2.png" width="30px"/> ImageJ</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img-src-https-us1-discourse-cdn-com-flex015-uploads-imagej-original-2x-b-bcdcd5ba157e07e74dd1964ec81765e708455ed9-png-alt-logo-width-30px-cellprofiler"><img alt="logo" src="https://us1.discourse-cdn.com/flex015/uploads/imagej/original/2X/b/bcdcd5ba157e07e74dd1964ec81765e708455ed9.png" width="30px"/> CellProfiler</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img-src-https-us1-discourse-cdn-com-flex015-uploads-imagej-optimized-3x-6-0-6039b2daa4b6b1c32943f63f464cf3c477898bfe-2-750x750-png-alt-logo-width-30px-qupath"><img alt="logo" src="https://us1.discourse-cdn.com/flex015/uploads/imagej/optimized/3X/6/0/6039b2daa4b6b1c32943f63f464cf3c477898bfe_2_750x750.png" width="30px"/> QuPath</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img-src-https-icy-bioimageanalysis-org-wp-content-uploads-2018-07-logo-full-notext600px-png-alt-logo-width-30px-icy"><img alt="logo" src="https://icy.bioimageanalysis.org/wp-content/uploads/2018/07/logo_full_notext600px.png" width="30px"/> Icy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img-src-https-us1-discourse-cdn-com-flex015-uploads-imagej-optimized-3x-7-4-74273a1f9a663b52053d44c9767ed49193f2170f-2-787x750-png-alt-logo-width-30px-mib-microscopy-image-browser"><img alt="logo" src="https://us1.discourse-cdn.com/flex015/uploads/imagej/optimized/3X/7/4/74273a1f9a663b52053d44c9767ed49193f2170f_2_787x750.png" width="30px"/> MIB (Microscopy Image Browser)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img-src-https-us1-discourse-cdn-com-flex015-uploads-imagej-optimized-3x-7-7-775e83f70639e1cb7cb299d8681d272e18718089-2-750x750-png-alt-logo-width-30px-napari"><img alt="logo" src="https://us1.discourse-cdn.com/flex015/uploads/imagej/optimized/3X/7/7/775e83f70639e1cb7cb299d8681d272e18718089_2_750x750.png" width="30px"/> napari</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="general-use-software">
+<h1>汎用ソフトウェア<a class="headerlink" href="#general-use-software" title="Permalink to this heading">#</a></h1>
+<p>本ページでは、多様な種類の解析や画像に対して比較的汎用的に利用できるものを中心に紹介しています。特定の解析工程に特化したツールについては、<a class="reference internal" href="SpecificUseSoftware.html"><span class="doc std std-doc">Specific Use Software</span></a>ページを参照してください。</p>
+<section id="img-src-https-imagej-net-media-icons-imagej2-png-alt-logo-width-30px-imagej">
+<span id="content-imagej"></span><h2><img src="https://imagej.net/media/icons/imagej2.png" alt="logo" width="30px"> ImageJ<a class="headerlink" href="#img-src-https-imagej-net-media-icons-imagej2-png-alt-logo-width-30px-imagej" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="https://imagej.net/">ImageJ</a><span id="id1"><sup><a class="reference internal" href="../bibliography.html#id24" title="Caroline A Schneider, Wayne S Rasband, and Kevin W Eliceiri. NIH image to ImageJ: 25 years of image analysis. Nat. Methods, 9(7):671–675, July 2012.">29</a>,<a class="reference internal" href="../bibliography.html#id13" title="Johannes Schindelin, Ignacio Arganda-Carreras, Erwin Frise, Verena Kaynig, Mark Longair, Tobias Pietzsch, Stephan Preibisch, Curtis Rueden, Stephan Saalfeld, Benjamin Schmid, Jean-Yves Tinevez, Daniel James White, Volker Hartenstein, Kevin Eliceiri, Pavel Tomancak, and Albert Cardona. Fiji: an open-source platform for biological-image analysis. Nat. Methods, 9(7):676–682, June 2012.">30</a>,<a class="reference internal" href="../bibliography.html#id32" title="Curtis T Rueden, Johannes Schindelin, Mark C Hiner, Barry E DeZonia, Alison E Walter, Ellen T Arena, and Kevin W Eliceiri. ImageJ2: ImageJ for the next generation of scientific image data. BMC Bioinformatics, 18(1):529, November 2017.">31</a></sup></span> は、マルチチャンネル画像、3次元画像、タイムラプス画像など、さまざまな種類の画像を扱うことができる画像処理プログラムです。基本的な画像処理操作を多数備えているだけでなく、多様なプラグインによって複雑な解析を行えるよう機能を拡張することもできます。</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+欠点<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">画像処理操作が基本的に一つずつ実行されることです。バッチ処理やマクロの作成も可能ですが、それらを活用するにはある程度のプログラミングの知識が必要です。</p></li>
+<li><p class="sd-card-text">大きな画像を開くことは可能であるものの、メモリ制限のため扱えるサイズには限界があります。また、たとえ大きな画像を開くことができたとしても、処理速度が低下する場合があります。</p></li>
+</ul>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+ダウンロード/インストール方法<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">ImageJ、または必要な機能があらかじめ含まれたバージョンである Fiji は以下のサイトからダウンロードできます。</p>
+<ul class="simple">
+<li><p class="sd-card-text">🌐 <a class="reference external" href="https://imagej.net/downloads">ImageJ download</a></p></li>
+</ul>
+<p class="sd-card-text">ImageJ の使用方法に関するドキュメントやチュートリアル、ならびに利用可能なプラグインの一覧については、このサイトをご覧ください。</p>
+<ul class="simple">
+<li><p class="sd-card-text">🌐 <a class="reference external" href="https://imagej.net/learn/">ImageJ basics</a></p></li>
+</ul>
+</div>
+</details></section>
+<section id="img-src-https-us1-discourse-cdn-com-flex015-uploads-imagej-original-2x-b-bcdcd5ba157e07e74dd1964ec81765e708455ed9-png-alt-logo-width-30px-cellprofiler">
+<span id="content-cellprofiler"></span><h2><img src="https://us1.discourse-cdn.com/flex015/uploads/imagej/original/2X/b/bcdcd5ba157e07e74dd1964ec81765e708455ed9.png" alt="logo" width="30px"> CellProfiler<a class="headerlink" href="#img-src-https-us1-discourse-cdn-com-flex015-uploads-imagej-original-2x-b-bcdcd5ba157e07e74dd1964ec81765e708455ed9-png-alt-logo-width-30px-cellprofiler" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="https://cellprofiler.org/">CellProfiler</a><span id="id2"><sup><a class="reference internal" href="../bibliography.html#id15" title="David R Stirling, Madison J Swain-Bowden, Alice M Lucas, Anne E Carpenter, Beth A Cimini, and Allen Goodman. CellProfiler 4: improvements in speed, utility and usability. BMC Bioinformatics, 22(1):433, September 2021.">32</a></sup></span> は生物学者によって生物学者のために設計されたソフトウェアで、計算科学の専門知識がなくても画像解析を行えるよう、研究者と画像解析を橋渡しすることを目的としています。本ソフトウェアは、画像解析パイプラインという概念に基づいて設計されています。複数のモジュールを組み合わせて独自の解析パイプラインを構築することができ、そのパイプラインを1枚から数千枚の画像にまで適用できます。このため、ハイスループット画像解析にも適しています。</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+欠点<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">CellProfilerは、組織学実験における全組織切片のような大規模画像には対応していません。現在のところ、扱える画像サイズは使用しているコンピュータのメモリ容量に制限されます。</p></li>
+<li><p class="sd-card-text">CellProfilerは3次元画像の解析を行うことができますが、可視化は閲覧ウィンドウ内のスライダーによって一度に1つの z 平面のみ表示する形式に限定されています。</p></li>
+<li><p class="sd-card-text">また、いくつかの機能は2次元画像での利用に限られます。</p></li>
+</ul>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+ダウンロード/インストール方法<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">CellProfilerをダウンロードするには</p>
+<ul class="simple">
+<li><p class="sd-card-text">🌐 <a class="reference external" href="https://cellprofiler.org/releases">CellProfiler download</a></p></li>
+</ul>
+<p class="sd-card-text">使用例とチュートリアル</p>
+<ul class="simple">
+<li><p class="sd-card-text">🌐 <a class="reference external" href="https://cellprofiler-manual.s3.amazonaws.com/CellProfiler-4.2.6/index.html">CellProfiler user manual</a></p></li>
+<li><p class="sd-card-text">🌐 <a class="reference external" href="https://cellprofiler.org/examples">Examples</a></p></li>
+<li><p class="sd-card-text">🌐 <a class="reference external" href="https://tutorials.cellprofiler.org/">Tutorials</a></p></li>
+<li><p class="sd-card-text">🎥 <a class="reference external" href="https://www.youtube.com/playlist?list=PLXSm9cHbSZBBy7JkChB32_e3lURUcT3RL">Video tutorials and workshops</a></p></li>
+</ul>
+</div>
+</details></section>
+<section id="img-src-https-us1-discourse-cdn-com-flex015-uploads-imagej-optimized-3x-6-0-6039b2daa4b6b1c32943f63f464cf3c477898bfe-2-750x750-png-alt-logo-width-30px-qupath">
+<span id="content-qupath"></span><h2><img src="https://us1.discourse-cdn.com/flex015/uploads/imagej/optimized/3X/6/0/6039b2daa4b6b1c32943f63f464cf3c477898bfe_2_750x750.png" alt="logo" width="30px"> QuPath<a class="headerlink" href="#img-src-https-us1-discourse-cdn-com-flex015-uploads-imagej-optimized-3x-6-0-6039b2daa4b6b1c32943f63f464cf3c477898bfe-2-750x750-png-alt-logo-width-30px-qupath" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="https://qupath.github.io/">QuPath</a><span id="id3"><sup><a class="reference internal" href="../bibliography.html#id67" title="Peter Bankhead, Maurice B Loughrey, José A Fernández, Yvonne Dombrowski, Darragh G McArt, Philip D Dunne, Stephen McQuaid, Ronan T Gray, Liam J Murray, Helen G Coleman, Jacqueline A James, Manuel Salto-Tellez, and Peter W Hamilton. QuPath: open source software for digital pathology image analysis. Sci. Rep., 7(1):16878, December 2017.">33</a></sup></span>  は、全スライド画像に適用可能な幅広い画像解析ツールを備えています。そのため、病理画像で広く利用されていますが、他の種類の画像にも使用できます。また、QuPath にはピクセル分類ツールが含まれており、ImageJ と連携することも可能です（例：<a class="reference internal" href="../Glossary.html#term-ROIs"><span class="xref std std-term">ROI</span></a> をプログラム間で送受信したり、ImageJ のプラグインにアクセスしたりすることができます）。</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+欠点<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">QuPath を最大限に活用するには（特に多数の画像を解析する場合）スクリプト作成やプログラミングに関する一定の知識（あるいは他者のプログラムを改変して利用する能力）が必要です。</p></li>
+</ul>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+ダウンロード/インストール方法<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">QuPathをダウンロードするには</p>
+<ul class="simple">
+<li><p class="sd-card-text">🌐 <a class="reference external" href="https://qupath.github.io/">QuPath download</a></p></li>
+</ul>
+<p class="sd-card-text">使用例とチュートリアル</p>
+<ul class="simple">
+<li><p class="sd-card-text">🌐 <a class="reference external" href="https://qupath.readthedocs.io/en/stable/">QuPath user manual</a></p></li>
+<li><p class="sd-card-text">🎥 <a class="reference external" href="https://www.youtube.com/c/qupath">Video tutorials and workshops</a></p></li>
+</ul>
+</div>
+</details></section>
+<section id="img-src-https-icy-bioimageanalysis-org-wp-content-uploads-2018-07-logo-full-notext600px-png-alt-logo-width-30px-icy">
+<span id="content-icy"></span><h2><img src="https://icy.bioimageanalysis.org/wp-content/uploads/2018/07/logo_full_notext600px.png" alt="logo" width="30px"> Icy<a class="headerlink" href="#img-src-https-icy-bioimageanalysis-org-wp-content-uploads-2018-07-logo-full-notext600px-png-alt-logo-width-30px-icy" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="https://icy.bioimageanalysis.org/">Icy</a><span id="id4"><sup><a class="reference internal" href="../bibliography.html#id47" title="Fabrice de Chaumont, Stéphane Dallongeville, Nicolas Chenouard, Nicolas Hervé, Sorin Pop, Thomas Provoost, Vannary Meas-Yedid, Praveen Pankajakshan, Timothée Lecomte, Yoann Le Montagner, Thibault Lagache, Alexandre Dufour, and Jean-Christophe Olivo-Marin. Icy: an open bioimage informatics platform for extended reproducible research. Nat. Methods, 9(7):690–696, June 2012.">34</a></sup></span> は、導入が簡単な画像解析ツールです。プラグインを用いて視覚的な画像解析プロトコルを作成でき、それらを他のユーザーと共有することができます。</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+欠点<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">他ソフトウェアとの相互運用は、ImageJ のみ対応しています。</p></li>
+</ul>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+ダウンロード/インストール方法<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Icyをダウンロードするには</p>
+<ul class="simple">
+<li><p class="sd-card-text">🌐 <a class="reference external" href="https://icy.bioimageanalysis.org/download/">Icy download</a></p></li>
+</ul>
+<p class="sd-card-text">使用例とチュートリアル</p>
+<ul class="simple">
+<li><p class="sd-card-text">🌐 <a class="reference external" href="https://icy.bioimageanalysis.org/trainings/">Icy course and tutorial</a></p></li>
+<li><p class="sd-card-text">🎥 <a class="reference external" href="https://www.youtube.com/watch?v=myal9BD6J-k">Bioimage analysis with Icy </a></p></li>
+</ul>
+</div>
+</details></section>
+<section id="img-src-https-us1-discourse-cdn-com-flex015-uploads-imagej-optimized-3x-7-4-74273a1f9a663b52053d44c9767ed49193f2170f-2-787x750-png-alt-logo-width-30px-mib-microscopy-image-browser">
+<span id="content-mib"></span><h2><img src="https://us1.discourse-cdn.com/flex015/uploads/imagej/optimized/3X/7/4/74273a1f9a663b52053d44c9767ed49193f2170f_2_787x750.png" alt="logo" width="30px"> MIB (Microscopy Image Browser)<a class="headerlink" href="#img-src-https-us1-discourse-cdn-com-flex015-uploads-imagej-optimized-3x-7-4-74273a1f9a663b52053d44c9767ed49193f2170f-2-787x750-png-alt-logo-width-30px-mib-microscopy-image-browser" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="http://mib.helsinki.fi/index.html">MIB</a><span id="id5"><sup><a class="reference internal" href="../bibliography.html#id92" title="Ilya Belevich, Merja Joensuu, Darshan Kumar, Helena Vihinen, and Eija Jokitalo. Microscopy image browser: a platform for segmentation and analysis of multidimensional datasets. PLoS Biol., 14(1):e1002340, January 2016.">35</a></sup></span>は、光学顕微鏡および電子顕微鏡の多次元データセットの解析に対応した、ユーザーフレンドリーな画像解析ソフトウェアです。取得したデータ全体を用いて解析を行い、形態学的特徴を抽出することが可能です。</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+欠点<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">これは MATLAB を用いて開発されています。スタンドアローン版も提供されていますが、最新の MATLAB リリースは使用されていません。</p></li>
+</ul>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+ダウンロード/インストール方法<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">MIBをダウンロードするには</p>
+<ul class="simple">
+<li><p class="sd-card-text">🌐 <a class="reference external" href="http://mib.helsinki.fi/downloads.html">MIB download</a></p></li>
+</ul>
+<p class="sd-card-text">使用例とチュートリアル</p>
+<ul class="simple">
+<li><p class="sd-card-text">🌐 <a class="reference external" href="http://mib.helsinki.fi/help/main2/im_browser_user_guide.html">MIB user guide</a></p></li>
+<li><p class="sd-card-text">🌐 <a class="reference external" href="http://mib.helsinki.fi/tutorials.html">Tutorials</a></p></li>
+<li><p class="sd-card-text">🎥 <a class="reference external" href="https://www.youtube.com/playlist?list=PLGkFvW985wz8cj8CWmXOFkXpvoX_HwXzj">Video tutorials</a></p></li>
+</ul>
+</div>
+</details></section>
+<section id="img-src-https-us1-discourse-cdn-com-flex015-uploads-imagej-optimized-3x-7-7-775e83f70639e1cb7cb299d8681d272e18718089-2-750x750-png-alt-logo-width-30px-napari">
+<span id="content-napari"></span><h2><img src="https://us1.discourse-cdn.com/flex015/uploads/imagej/optimized/3X/7/7/775e83f70639e1cb7cb299d8681d272e18718089_2_750x750.png" alt="logo" width="30px"> napari<a class="headerlink" href="#img-src-https-us1-discourse-cdn-com-flex015-uploads-imagej-optimized-3x-7-7-775e83f70639e1cb7cb299d8681d272e18718089-2-750x750-png-alt-logo-width-30px-napari" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="https://napari.org/">napari</a><span id="id6"><sup><a class="reference internal" href="../bibliography.html#id41" title="Nicholas Sofroniew, Talley Lambert, Kira Evans, Juan Nunez-Iglesias, Grzegorz Bokota, Philip Winston, Gonzalo Peña-Castellanos, Kevin Yamauchi, Matthias Bussonnier, Draga Doncila Pop, Ahmet Can Solak, Ziyang Liu, Pam Wadhwa, Alister Burt, Genevieve Buckley, Andrew Sweet, Lukasz Migas, Volker Hilsenstein, Lorenzo Gaifas, Jordão Bragantini, Jaime Rodríguez-Guerra, Hector Muñoz, Jeremy Freeman, Peter Boone, Alan Lowe, Christoph Gohlke, Loic Royer, Andrea Pierré, Hagai Har-Gil, and Abigail McGovern. Napari: a multi-dimensional image viewer for python. November 2022.">36</a></sup></span> は、多次元画像ビューアとして開発が進められています。さまざまなプラグインによって機能を拡張し、基本的な画像解析から高度な解析まで実行することができます。</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+欠点<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">napariはまだ開発段階ですが、非常に人気のあるプラットフォームで、すでにさまざまなプラグインや使用例があり、チュートリアルも用意されています。</p></li>
+</ul>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+ダウンロード/インストール方法<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">napariをダウンロードするには</p>
+<ul class="simple">
+<li><p class="sd-card-text">🌐 <a class="reference external" href="https://napari.org/stable/tutorials/fundamentals/installation.html#install-as-a-bundled-app">napari bundled app download </a></p></li>
+</ul>
+<p class="sd-card-text">使用例とチュートリアル</p>
+<ul class="simple">
+<li><p class="sd-card-text">🌐 <a class="reference external" href="https://napari.org/stable/tutorials/fundamentals/getting_started.html">New to napari guide </a></p></li>
+<li><p class="sd-card-text">🌐 <a class="reference external" href="https://napari.org/stable/tutorials/index.html">Tutorials</a></p></li>
+<li><p class="sd-card-text">🌐 <a class="reference external" href="https://focalplane.biologists.com/category/blog-series/bio-image-analysis-with-napari/">Bioimage Analysis with Napari - A FocalPlane blog series</a></p></li>
+</ul>
+</div>
+</details></section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./03_Image_analysis"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Software.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">前へ</p>
+        <p class="prev-next-title">オープンソースのソフトウェア</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="SpecificUseSoftware.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">次へ</p>
+        <p class="prev-next-title">特定の用途に使うソフトウェア</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> 目次
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img-src-https-imagej-net-media-icons-imagej2-png-alt-logo-width-30px-imagej"><img alt="logo" src="https://imagej.net/media/icons/imagej2.png" width="30px"/> ImageJ</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img-src-https-us1-discourse-cdn-com-flex015-uploads-imagej-original-2x-b-bcdcd5ba157e07e74dd1964ec81765e708455ed9-png-alt-logo-width-30px-cellprofiler"><img alt="logo" src="https://us1.discourse-cdn.com/flex015/uploads/imagej/original/2X/b/bcdcd5ba157e07e74dd1964ec81765e708455ed9.png" width="30px"/> CellProfiler</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img-src-https-us1-discourse-cdn-com-flex015-uploads-imagej-optimized-3x-6-0-6039b2daa4b6b1c32943f63f464cf3c477898bfe-2-750x750-png-alt-logo-width-30px-qupath"><img alt="logo" src="https://us1.discourse-cdn.com/flex015/uploads/imagej/optimized/3X/6/0/6039b2daa4b6b1c32943f63f464cf3c477898bfe_2_750x750.png" width="30px"/> QuPath</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img-src-https-icy-bioimageanalysis-org-wp-content-uploads-2018-07-logo-full-notext600px-png-alt-logo-width-30px-icy"><img alt="logo" src="https://icy.bioimageanalysis.org/wp-content/uploads/2018/07/logo_full_notext600px.png" width="30px"/> Icy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img-src-https-us1-discourse-cdn-com-flex015-uploads-imagej-optimized-3x-7-4-74273a1f9a663b52053d44c9767ed49193f2170f-2-787x750-png-alt-logo-width-30px-mib-microscopy-image-browser"><img alt="logo" src="https://us1.discourse-cdn.com/flex015/uploads/imagej/optimized/3X/7/4/74273a1f9a663b52053d44c9767ed49193f2170f_2_787x750.png" width="30px"/> MIB (Microscopy Image Browser)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#img-src-https-us1-discourse-cdn-com-flex015-uploads-imagej-optimized-3x-7-7-775e83f70639e1cb7cb299d8681d272e18718089-2-750x750-png-alt-logo-width-30px-napari"><img alt="logo" src="https://us1.discourse-cdn.com/flex015/uploads/imagej/optimized/3X/7/7/775e83f70639e1cb7cb299d8681d272e18718089_2_750x750.png" width="30px"/> napari</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <p>
+<a href="https://www.bioimagingguide.org">English</a> <a href="https://cs.bioimagingguide.org">česky</a> <a href="https://pt.bioimagingguide.org">português</a> <a href="https://es.bioimagingguide.org">español</a>
+</p>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
