@@ -1,0 +1,2 @@
+# MicroscopyForBeginnersReferenceGuide_ja
+Japanese translation of bioimagingguide.org
