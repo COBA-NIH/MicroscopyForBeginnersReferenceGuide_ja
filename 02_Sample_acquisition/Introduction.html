@@ -188,7 +188,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Introduction.html">はじめに</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Experimental_design.html">実験デザイン</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Considerations.html">サンプルの種類の検討</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Considerations.html">試料の種類の検討</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Reproducibility.html">再現性</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Resources.html">より詳しく知るための参考資料</a></li>
 </ul>
@@ -464,7 +464,7 @@ document.write(`
 <h2>顕微鏡の種類<a class="headerlink" href="#types-of-microscopes" title="Permalink to this heading">#</a></h2>
 <p>ここでは網羅的ではないものの、顕微鏡の代表的な種類をいくつか挙げます。</p>
 <ul class="simple">
-<li><p>広視野顕微鏡 widefield microscopyは、単一の光路を通じて得られるすべての光を同時に取り込むタイプの顕微鏡です。落射蛍光顕微鏡 epifluorescence microscopy とも呼ばれます。この方式は必要なハードウェアが比較的単純であり、暗い試料を撮像する際に有利な場合があります。広視野顕微鏡で撮像した後には、画像のぼやけを低減するために <span class="xref std std-term">デコンボリューション</span>処理を行うことがあります。</p></li>
+<li><p><strong>広視野顕微鏡 widefield microscopy</strong> は、単一の光路を通じて得られるすべての光を同時に取り込むタイプの顕微鏡です。落射蛍光顕微鏡 epifluorescence microscopy とも呼ばれます。この方式は必要なハードウェアが比較的単純であり、暗い試料を撮像する際に有利な場合があります。広視野顕微鏡で撮像した後には、画像のぼやけを低減するためにデコンボリューション <a class="reference internal" href="../Glossary.html#term-Deconvolution"><span class="xref std std-term">deconvolution</span></a>処理を行うことがあります。</p></li>
 <li><p><strong>共焦点顕微鏡 confocal microscopy</strong> は、光路中の焦点外の光を除去することで、より鮮明な像を得る顕微鏡です。通常は、1つまたは複数のピンホールを用いて、焦点面以外からの光を物理的に遮断します。共焦点顕微鏡にはいくつかの方式がありますが、スピニングディスク型共焦点顕微鏡は、試料への光毒性を比較的低く抑えられるため、ライブセルイメージングに適していることが多いです。</p></li>
 <li><p><strong>多光子顕微鏡 multiphoton microscopy</strong> は、より長波長の（低エネルギーだが届きやすい）光を複数回パルス照射することで、組織深部まで光を到達させる顕微鏡です。長波長の光は組織内で散乱されにくいため、より深い位置まで透過します。焦点位置では、複数の低エネルギー光子が同時に蛍光色素に吸収され、そのエネルギーが合算されることで、単一の光子では励起できない蛍光色素を励起することができます。このような特性から、多光子顕微鏡は組織深部の観察に適しており、特にマウスをはじめとする生体動物ライブイメージングに広く用いられています。</p></li>
 <li><p><strong>超解像顕微鏡 Superresolution microscopy</strong> は、顕微鏡の光学的解像度の理論的限界（回折限界、通常は約200 nmですが、試料条件によって異なります）を超えて、より微細な構造を観察できるように設計された顕微鏡です。この回折限界の克服は、特殊な光学系や装置構成によって実現される場合（STED 、SIM）もあれば、特殊な蛍光プローブや分子局在解析を利用して実現される場合（PALM、STORM）もあります。</p></li>

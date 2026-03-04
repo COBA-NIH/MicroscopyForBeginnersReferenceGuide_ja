@@ -188,7 +188,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Introduction.html">はじめに</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Experimental_design.html">実験デザイン</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Considerations.html">サンプルの種類の検討</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Considerations.html">試料の種類の検討</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Reproducibility.html">再現性</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Resources.html">より詳しく知るための参考資料</a></li>
 </ul>
@@ -460,7 +460,7 @@ document.write(`
 <h1>オブジェクトトラッキング<a class="headerlink" href="#object-tracking" title="Permalink to this heading">#</a></h1>
 <section id="what-is-tracking">
 <h2>トラッキングとは<a class="headerlink" href="#what-is-tracking" title="Permalink to this heading">#</a></h2>
-<p>トラッキング、または_オブジェクトトラッキング object tracking_とは、動画の各フレーム間で動いているオブジェクトの位置を推定する技術です。顕微鏡画像における追跡では、まず動画の各フレームでオブジェクトを検出し、次にフレーム間で同一の細胞を対応付けることで、その移動を追跡します。</p>
+<p>トラッキング、またはオブジェクトトラッキング object trackingとは、動画の各フレーム間で動いているオブジェクトの位置を推定する技術です。顕微鏡画像における追跡では、まず動画の各フレームでオブジェクトを検出し、次にフレーム間で同一の細胞を対応付けることで、その移動を追跡します。</p>
 <br>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -479,7 +479,7 @@ document.write(`
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <ul class="simple">
-<li><p class="sd-card-text"><strong><span class="xref std std-term">セグメンテーション</span>の精度が低い場合</strong>　フレーム間でオブジェクトが検出されなくなると、時系列での追跡が困難になります。精度の高い<span class="xref std std-term">セグメンテーション</span>は、良好な追跡結果の基盤となります。動画の進行とともにオブジェクトの形状や輝度が変化する場合（褪色による輝度低下など）は、セグメンテーションの難易度が高くなります。全フレームにわたって安定して機能する<span class="xref std std-term">セグメンテーション</span>の手法を見つけることが重要です。</p></li>
+<li><p class="sd-card-text"><strong>セグメンテーション <a class="reference internal" href="../Glossary.html#term-Segmentation"><span class="xref std std-term">segmentation</span></a>の精度が低い場合</strong>　フレーム間でオブジェクトが検出されなくなると、時系列での追跡が困難になります。精度の高いセグメンテーション <a class="reference internal" href="../Glossary.html#term-Segmentation"><span class="xref std std-term">segmentation</span></a> は、良好な追跡結果の基盤となります。動画の進行とともにオブジェクトの形状や輝度が変化する場合（褪色による輝度低下など）は、セグメンテーションの難易度が高くなります。全フレームにわたって安定して機能するセグメンテーション <a class="reference internal" href="../Glossary.html#term-Segmentation"><span class="xref std std-term">segmentation</span></a> の手法を見つけることが重要です。</p></li>
 <li><p class="sd-card-text"><strong>フレームレートが不十分な場合</strong> オブジェクトの動きが速いにもかかわらず撮影頻度が低いと、フレーム間でオブジェクトが大きく移動してしまい、アルゴリズムによる対応付けが困難になります。細胞やオブジェクトの動態に合わせて、画像取得頻度を適切に設定することが重要です。</p></li>
 </ul>
 </div>

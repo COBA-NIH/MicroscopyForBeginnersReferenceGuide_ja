@@ -188,7 +188,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Introduction.html">はじめに</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Experimental_design.html">実験デザイン</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Considerations.html">サンプルの種類の検討</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Considerations.html">試料の種類の検討</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Reproducibility.html">再現性</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Resources.html">より詳しく知るための参考資料</a></li>
 </ul>
@@ -461,7 +461,7 @@ document.write(`
 <section id="what-is-colocalization">
 <span id="content-colocalization"></span><h2>共局在とは<a class="headerlink" href="#what-is-colocalization" title="Permalink to this heading">#</a></h2>
 <p>共局在 colocalization とは、2種類以上の異なる標識（例：eGFP や mCherry）が画像上で空間的に重なって観察される現象を指します（共起 co-occurrence とも呼ばれます）。共局在のもう一つの重要な側面は、蛍光強度の相関です（例えば、eGFP の輝度が高い画素では mCherry の輝度も高い、といった強度の対応関係が見られるなど）。共局在の評価は、必ず定量的に行うことが重要です。<strong>絶対に自分の目を信じてはいけません！</strong></p>
-<p>また、共局在は_必ずしも_相互作用を意味するわけではないことにも注意が必要です。</p>
+<p>また、共局在は必ずしも相互作用を意味するわけではないことにも注意が必要です。</p>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <p>日常生活でも、同じ建物で働いている2人がまったく対話しないこともありえます。</p>
@@ -502,7 +502,7 @@ document.write(`
   style C fill:#FFD6E8,stroke:#F5006A
   style D fill:#FFD6E8,stroke:#F5006A
         </div><ul class="simple">
-<li><p class="sd-card-text"><strong>相関ベースの共局在</strong>は、測定対象の標識が明確なオブジェクトとして存在しない場合や、標識間のシグナルが相関すると予測される場合により適しています。相関ベースの共局在は、オブジェクトの <span class="xref std std-term">セグメンテーション</span> を必要としないため、比較的容易に測定できます。ピアソンの相関係数は、多くの画像解析ソフトウェア（例：FIJI、CellProfiler など）で容易に算出することができます。</p></li>
+<li><p class="sd-card-text"><strong>相関ベースの共局在</strong>は、測定対象の標識が明確なオブジェクトとして存在しない場合や、標識間のシグナルが相関すると予測される場合により適しています。相関ベースの共局在は、オブジェクトの セグメンテーション <a class="reference internal" href="../Glossary.html#term-Segmentation"><span class="xref std std-term">segmentation</span></a> を必要としないため、比較的容易に測定できます。ピアソンの相関係数は、多くの画像解析ソフトウェア（例：FIJI、CellProfiler など）で容易に算出することができます。</p></li>
 </ul>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">

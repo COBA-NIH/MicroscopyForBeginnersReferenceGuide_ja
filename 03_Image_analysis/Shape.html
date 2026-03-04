@@ -190,7 +190,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Introduction.html">はじめに</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Experimental_design.html">実験デザイン</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Considerations.html">サンプルの種類の検討</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Considerations.html">試料の種類の検討</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Reproducibility.html">再現性</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../01_Sample_preparation/Resources.html">より詳しく知るための参考資料</a></li>
 </ul>
@@ -475,7 +475,7 @@ document.write(`
 <p>形状測定は、試料内のオブジェクトの2次元または3次元の形状を表します。一般的な形状測定には以下が含まれます：</p>
 <ul class="simple">
 <li><p><strong>円形度</strong> circularity：オブジェクトがどれほど丸いか、または細長いかを示す指標です。正式には <span class="math notranslate nohighlight">\(円形度 = 4pi*{面積}/{周囲長}^2\)</span> と定義されます。ここで 1 は真円で0に近づくほどより細長い多角形であることを意味します。</p></li>
-<li><p><strong>充実度</strong>：オブジェクトがどれほど密か、またはまばら・穴だらけかを表します。正式には<span class="math notranslate nohighlight">\(充実度 = 面積/凸面積\)</span>と定義されます。ここで_凸面積_は、オブジェクトの周囲に輪ゴムを伸ばして形成された形の内側の面積のようなものです。</p></li>
+<li><p><strong>充実度</strong>：オブジェクトがどれほど密か、またはまばら・穴だらけかを表します。正式には<span class="math notranslate nohighlight">\(充実度 = 面積/凸面積\)</span>と定義されます。ここで凸面積は、オブジェクトの周囲に輪ゴムを伸ばして形成された形の内側の面積のようなものです。</p></li>
 </ul>
 <br>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -485,7 +485,7 @@ document.write(`
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">異なるオブジェクトに属するピクセルを特定するために画像をセグメンテーションした後、FijiやCellProfilerなどの多くの画像解析ソフトウェアで形態を容易に測定できます。例えば、<a class="reference internal" href="../Glossary.html#term-Fiji"><span class="xref std std-term">Fiji</span></a>では、オブジェクトを{term}ROIとして特定した後、**Analyze &gt; Set Measurements…**で「Shape Descriptors」を選択し、<strong>Analyze &gt; Measure</strong> で<a class="reference internal" href="../Glossary.html#term-ROIs"><span class="xref std std-term">ROI</span></a>を測定します。CellProfilerでは、<code class="docutils literal notranslate"><span class="pre">MeasureObjectSizeShape</span></code>モジュールを使用してこれを実行します。</p>
+<p class="sd-card-text">異なるオブジェクトに属するピクセルを特定するために画像をセグメンテーションした後、FijiやCellProfilerなどの多くの画像解析ソフトウェアで形態を容易に測定できます。例えば、 <a class="reference internal" href="../Glossary.html#term-Fiji"><span class="xref std std-term">Fiji</span></a> では、オブジェクトを <a class="reference internal" href="../Glossary.html#term-ROIs"><span class="xref std std-term">ROIs</span></a> として特定した後、**Analyze &gt; Set Measurements…**で「Shape Descriptors」を選択し、<strong>Analyze &gt; Measure</strong> で <a class="reference internal" href="../Glossary.html#term-ROIs"><span class="xref std std-term">ROIs</span></a> を測定します。CellProfilerでは、<code class="docutils literal notranslate"><span class="pre">MeasureObjectSizeShape</span></code>モジュールを使用してこれを実行します。</p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">

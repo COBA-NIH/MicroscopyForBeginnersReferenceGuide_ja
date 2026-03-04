@@ -79,7 +79,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="より詳しく知るための参考資料" href="Resources.html" />
-    <link rel="prev" title="サンプルの種類の検討" href="Considerations.html" />
+    <link rel="prev" title="試料の種類の検討" href="Considerations.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="ja"/>
   </head>
@@ -188,7 +188,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Introduction.html">はじめに</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Experimental_design.html">実験デザイン</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Considerations.html">サンプルの種類の検討</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Considerations.html">試料の種類の検討</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">再現性</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Resources.html">より詳しく知るための参考資料</a></li>
 </ul>
@@ -463,8 +463,8 @@ document.write(`
 <p id="content-reproducibility">再現性のある顕微鏡実験を設計するためには、いくつかの重要な要素があります。ここではその中でも特に重要な点をいくつか示します。詳しくは、<span id="id1"><sup><a class="reference internal" href="../bibliography.html#id72" title="Anna Payne-Tobin Jost and Jennifer C Waters. Designing a rigorous microscopy experiment: validating methods and avoiding bias. J. Cell Biol., 218(5):1452–1466, May 2019.">9</a></sup></span> などを参照してください。</p>
 <section id="antibody-validation">
 <h2>抗体の特異性を確認する<a class="headerlink" href="#antibody-validation" title="Permalink to this heading">#</a></h2>
-<p>理想的には、抗体は特定の標的分子に対して常に高い特異性を示すはずですが、<span class="xref std std-term">免疫標識</span><span id="id2"><sup><a class="reference internal" href="../bibliography.html#id30" title="Mathias Uhlen, Anita Bandrowski, Steven Carr, Aled Edwards, Jan Ellenberg, Emma Lundberg, David L Rimm, Henry Rodriguez, Tara Hiltke, Michael Snyder, and Tadashi Yamamoto. A proposal for validation of antibodies. Nat. Methods, 13(10):823–827, October 2016.">10</a></sup></span> を行う際にそれを当然の前提とすることはできません。可能であれば、ノックアウトやノックダウンの対照実験を行い、抗体の特異性を確認するべきです。それが難しい場合には、標的分子の別の部位（エピトープ）を認識する別の抗体が利用可能かどうかを確認し、同様の局在パターンが得られることを確かめます。</p>
-<p>使用する抗体やプロトコールに合わせて<span class="xref std std-term">ブロッキング</span>や<span class="xref std std-term">透過化</span>の条件を最適化することで、非特異的なバックグラウンドシグナルを低減できます。さらに、一次抗体を使用しないコントロールも必ず実施してください。これは、観察されたシグナルが特異的であることを検証するために不可欠です。</p>
+<p>理想的には、抗体は特定の標的分子に対して常に高い特異性を示すはずですが、免疫標識 <a class="reference internal" href="../Glossary.html#term-Immunolabeling"><span class="xref std std-term">immunolabeling</span></a> <span id="id2"><sup><a class="reference internal" href="../bibliography.html#id30" title="Mathias Uhlen, Anita Bandrowski, Steven Carr, Aled Edwards, Jan Ellenberg, Emma Lundberg, David L Rimm, Henry Rodriguez, Tara Hiltke, Michael Snyder, and Tadashi Yamamoto. A proposal for validation of antibodies. Nat. Methods, 13(10):823–827, October 2016.">10</a></sup></span> を行う際にそれを当然の前提とすることはできません。可能であれば、ノックアウトやノックダウンの対照実験を行い、抗体の特異性を確認するべきです。それが難しい場合には、標的分子の別の部位（エピトープ）を認識する別の抗体が利用可能かどうかを確認し、同様の局在パターンが得られることを確かめます。</p>
+<p>使用する抗体やプロトコールに合わせてブロッキング <a class="reference internal" href="../Glossary.html#term-Blocking"><span class="xref std std-term">blocking</span></a>や透過化 <a class="reference internal" href="../Glossary.html#term-Permeabilization"><span class="xref std std-term">permeabilization</span></a> の条件を最適化することで、非特異的なバックグラウンドシグナルを低減できます。さらに、一次抗体を使用しないコントロールも必ず実施してください。これは、観察されたシグナルが特異的であることを検証するために不可欠です。</p>
 </section>
 <section id="fluorescent-protein-localization-validation">
 <h2>蛍光タンパク質の局在を確認する<a class="headerlink" href="#fluorescent-protein-localization-validation" title="Permalink to this heading">#</a></h2>
@@ -472,7 +472,7 @@ document.write(`
 </section>
 <section id="bleedthrough">
 <span id="content-bleedthrough"></span><h2>漏れ込み / ブリードスルー bleedthrough<a class="headerlink" href="#bleedthrough" title="Permalink to this heading">#</a></h2>
-<p>多色蛍光顕微鏡観察を行う際には、励起スペクトルおよび発光スペクトルが十分に分離した蛍光色素を選択することが重要です。FPbase <span id="id5"><sup><a class="reference internal" href="../bibliography.html#id36" title="Talley J Lambert. FPbase: a community-editable fluorescent protein database. Nat. Methods, 16(4):277–278, April 2019.">13</a></sup></span>のようなオンラインツールは、特に使用する顕微鏡の光学系（光源、フィルター、検出器など）の構成を把握している場合に、適切な蛍光色素の選択に役立ちます。これらの光学構成はFPbase上で保存・共有することも可能ですので、使用予定の顕微鏡について既に設定ファイルが公開されているかどうかを、管理担当者に確認するとよいでしょう。蛍光色素のスペクトルが十分に分離していると考えられる場合でも、隣接する波長のシグナルが混入するブリードスルーが生じていないことを確認するために、多色対照と同じ撮像条件（できれば同じ日に実施）で単色蛍光対照を必ず確認してください。特に、<a class="reference internal" href="../03_Image_analysis/Colocalization.html#content-colocalization"><span class="std std-ref">共局在</span></a>を定量的に評価する予定がある場合には、この確認は_必須_です。</p>
+<p>多色蛍光顕微鏡観察を行う際には、励起スペクトルおよび発光スペクトルが十分に分離した蛍光色素を選択することが重要です。FPbase <span id="id5"><sup><a class="reference internal" href="../bibliography.html#id36" title="Talley J Lambert. FPbase: a community-editable fluorescent protein database. Nat. Methods, 16(4):277–278, April 2019.">13</a></sup></span>のようなオンラインツールは、特に使用する顕微鏡の光学系（光源、フィルター、検出器など）の構成を把握している場合に、適切な蛍光色素の選択に役立ちます。これらの光学構成はFPbase上で保存・共有することも可能ですので、使用予定の顕微鏡について既に設定ファイルが公開されているかどうかを、管理担当者に確認するとよいでしょう。蛍光色素のスペクトルが十分に分離していると考えられる場合でも、隣接する波長のシグナルが混入するブリードスルーが生じていないことを確認するために、多色対照と同じ撮像条件（できれば同じ日に実施）で単色蛍光対照を必ず確認してください。特に、<a class="reference internal" href="../03_Image_analysis/Colocalization.html#content-colocalization"><span class="std std-ref">共局在</span></a>を定量的に評価する予定がある場合には、この確認は必須です。</p>
 </section>
 </section>
 
@@ -512,7 +512,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">前へ</p>
-        <p class="prev-next-title">サンプルの種類の検討</p>
+        <p class="prev-next-title">試料の種類の検討</p>
       </div>
     </a>
     <a class="right-next"
