@@ -477,14 +477,14 @@ document.write(`
 </dd>
 <dt id="term-Permeabilization">透過処理 Permeabilization<a class="headerlink" href="#term-Permeabilization" title="この用語の解説へ">#</a></dt><dd><p>免疫染色に用いる抗体やその他の蛍光体を細胞や組織内の抗原に到達・結合させるために、弱い界面活性剤によって膜完全性を損なう（孔を形成する）処理。透過処理は細胞質の喪失やシグナルの劣化を招く可能性があるため、目的の抗原に応じて慎重に最適化する必要がある。</p>
 </dd>
-<dt id="term-Refractive-index">屈折率 Refractive index<a class="headerlink" href="#term-Refractive-index" title="この用語の解説へ">#</a></dt><dd><p>特定の媒質中を光がどのように伝播するかを表す指標。対物レンズの開口数を計算する上で重要な値であり、画質を向上させるためには、試料（封入剤）、カバーガラス、および浸漬媒質間の屈折率の不一致を最小限に抑えることが望ましい。屈折率のインタラクティブなデモはMicroscopyUで参照できる。<a class="reference external" href="https://www.microscopyu.com/microscopy-basics/refractive-index-index-of-refraction">MicroscopyUで屈折率のインタラクティブデモを見る</a></p>
+<dt id="term-Refractive-index">屈折率 Refractive index<a class="headerlink" href="#term-Refractive-index" title="この用語の解説へ">#</a></dt><dd><p>It's a measure of how light travels through a specific medium. It is an important value when calculating the numerical aperture of an objective, Ideally, a mismatch in refractive index between the sample (mounting medium), the coverslip and immersion media should be minimized in order to enhance the image quality. <a class="reference external" href="https://www.microscopyu.com/microscopy-basics/refractive-index-index-of-refraction">See an interactive demo of refractive index at MicroscopyU</a></p>
 </dd>
 <dt id="term-ROIs">ROI<a class="headerlink" href="#term-ROIs" title="この用語の解説へ">#</a></dt><dd><p>関心領域。画像内の気になる領域のこと（組織内の領域、細胞、腫瘍など）。</p>
 </dd>
 <dt id="term-Segmentation">セグメンテーション Segmentation<a class="headerlink" href="#term-Segmentation" title="この用語の解説へ">#</a></dt><dd><p>画像を複数の部分または領域に分割する手法。セグメンテーションには以下の3種類がある。</p>
 <ul class="simple">
 <li><p>セマンティック（&quot;意味的な&quot;）セグメンテーション semantic segmentation とは、画像のすべての部分があるクラスに属するというもので、細胞生物学では、画像を細胞とそれ以外の領域に分割するのが一般的である。</p></li>
-<li><p>インスタンス（”物体ごとの”）セグメンテーション instance segmentation では、はオブジェクト単位のセグメンテーションであり、細胞の存在領域を検出するだけでなく、各細胞を個別のオブジェクトとして分割する。</p></li>
+<li><p>Instance segmentation, the segmentation is object based, not just detecting where the cells are but diving each cell as a separate object.</p></li>
 <li><p>パノプティック（&quot;総括的な&quot;）セグメンテーションは、上記2つを組み合わせた手法であり、オブジェクトを識別しながら分類も行う。生物学的な例としては、画像内のすべての細胞を検出し、分裂中か否かに分類することが挙げられる。</p></li>
 </ul>
 </dd>
